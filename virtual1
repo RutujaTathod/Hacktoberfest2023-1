@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+    class a{
+        public:
+         virtual void getdata(){
+            cout<<"my name is maya"<<endl;
+
+         }
+    };
+    class b:public a{
+        public:
+        void getdata(){
+            cout<<"i am in 2nd yr"<<endl;
+        }
+    };
+    int main(){
+       a Aobj;
+       b Bobj;
+       a *rptr;
+       rptr= &Aobj;
+       Aobj.getdata();
+       rptr= &Bobj;
+       Bobj.getdata();
+       return 0;
+
+
+      
+    
+}
